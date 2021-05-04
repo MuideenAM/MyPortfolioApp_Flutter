@@ -81,24 +81,21 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Scaffold(
             appBar: AppBar(
               bottom: TabBar(
-                tabs: [
-                  new Container(
-                    width: 30%,
-                    child: Tab(text: 'Education')
-                  ),
-                  Container(
-                    width: 100,
-                      child: Tab(text: 'Experience')
-                  ),
-                  Container(
-                      width: 40,
-                      child: Tab(text: 'Skills')
-                  ),
-                  Container(
-                      width: 40,
-                      child: Tab(text: 'Contact')
-                  )
-                ],
+                  tabs: [
+                    Tab(
+                      child: Text('Education'),
+                    ),
+                    Tab(
+                        child: Text('Experience'),
+                    ),
+                    Tab(
+                        child: Text('Skills'),
+                    ),
+                    Tab(
+                        child: Text('Contact'),
+                    ),
+                  ]),
+                title: Center(child: Text('MURITALA Muideen Agunbiade'))
               ),
             ),
           ),
@@ -128,7 +125,6 @@ class _MyHomePageState extends State<MyHomePage> {
            // ),
           //],
         ),
-      ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
